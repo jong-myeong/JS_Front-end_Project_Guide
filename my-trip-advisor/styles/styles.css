@@ -1,4 +1,4 @@
-/* 폰트 */
+/* 공통 */
 
 @font-face {
     font-family: 'Heebo';
@@ -10,22 +10,6 @@
     src: url('../fonts/Heebo-Bold.ttf') format('truetype');
     font-weight: bold;
 }
-
-.lg-text {
-    font-family: 'Heebo', sans-serif;
-    font-size: 80px;
-    font-weight: bold;
-    color: #fff;
-}
-
-.md-text {
-    font-family: 'Heebo', sans-serif;
-    font-size: 25px;
-    font-weight: normal;
-    color: #fff;
-}
-
-/* 공통 */
 
 html, body {
     margin: 0;
@@ -42,14 +26,134 @@ button:hover {
     cursor: pointer;
 }
 
-.container {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+.blue {
+    color: #4299E1;
 }
 
-/* header */
+.black {
+    color: #000;
+}
+
+.ui-datepicker {
+    width: 321px;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.right {
+    float: right;
+}
+
+.lg-text {
+    font-family: 'Heebo', sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.md-text {
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.ui-datepicker {
+    width: 321px;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.white-bg {
+    background-color: #F5F7F8;
+}
+
+.black-bg {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.gray-bg {
+    background-color: #F6F7F7;
+}
+
+.form-box {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.sm-box {
+    width: 490px;
+    height: 420px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.md-box {
+    width: 610px;
+    height: 740px;
+    background-color: #fff;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    margin: 150px auto 150px;
+}
+
+.form-box .title {
+    font-size: 28px;
+    text-align: center;
+}
+
+.form-box .sub-title {
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 35px;
+    font-size: 15px;
+    color: #bbb;
+    text-align: center;
+}
+
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="password"] {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    color: #505050;
+    font-size: 17px;
+    margin-bottom: 12px;
+    padding: 22px;
+}
+
+.form-box button {
+    display: inline-block;
+    color: #fff;
+    background-color: #4299E1;
+    border: 0;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.form-box.sm-box input[type="text"],
+.form-box.sm-box input[type="email"],
+.form-box.sm-box input[type="password"],
+.form-box.sm-box button {
+    width: 370px;
+    height: 55px;
+}
+
+.form-box.md-box input[type="text"],
+.form-box.md-box input[type="email"],
+.form-box.md-box input[type="password"],
+.form-box.md-box button {
+    width: 470px;
+    height: 55px;
+}
 
 #header {
     position: fixed;
@@ -107,11 +211,14 @@ button:hover {
     color: #000;
 }
 
-.right {
-    float: right;
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-/* 본문 */
+/* 메인 */
 
 #body {
     width: 100%;
@@ -135,8 +242,6 @@ button:hover {
     text-align: center;
 }
 
-/* 검색 */
-
 #search-panel {
     margin: 110px auto 570px;
     left: 0;
@@ -148,6 +253,15 @@ button:hover {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.panel-block {
+    display: inline-block;
+    margin-right: 17px;
+}
+
+.panel-block:last-of-type {
+    vertical-align: bottom;
 }
 
 #search-panel label {
@@ -179,21 +293,6 @@ button:hover {
 #search-panel .btn-search img {
     vertical-align: middle;
 }
-
-.panel-block {
-    display: inline-block;
-    margin-right: 17px;
-}
-
-.panel-block:last-of-type {
-    vertical-align: bottom;
-}
-
-.ui-datepicker {
-    width: 321px;
-}
-
-/* 검색 결과 템플릿 */
 
 #list-bg {
     display: none;
@@ -433,4 +532,90 @@ button:hover {
     right: 20px;
     top: 21px;
     background-image: url('../images/btn_close.png');
+}
+
+/* 회원가입 */
+.form-box .inner {
+    padding: 60px 70px;
+}
+
+#form-register {
+    font-size: 15px;
+}
+
+#inp-password {
+    margin-top: 26px;
+}
+
+.div-gender {
+    margin-top: 12px;
+}
+
+.div-gender .txt-warning {
+    margin-top: 2px;
+}
+
+#inp-female {
+    margin-left: 20px;
+}
+
+.div-birth {
+    margin-top: 17px;
+}
+
+.div-birth .txt-warning {
+    margin-top: 10px;
+}
+
+#inp-accept {
+    margin-top: 30px;
+}
+
+#btn-submit {
+    margin-top: 50px;
+}
+
+.overflow {
+    height: 200px;
+}
+
+#btn-back {
+    background-color: #A4AAB2;
+}
+
+.ui-selectmenu-text {
+    color: #505050;
+    font-weight: 400;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active {
+    color: #000;
+}
+
+#sel-birth-button {
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.div-accept .txt-warning {
+    margin-top: 27px;
+}
+
+.txt-warning {
+    display: none;
+    font-size: 13px;
+    color: red;
+    margin-top: -5px;
+}
+
+/* 로그인 */
+
+#login {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
