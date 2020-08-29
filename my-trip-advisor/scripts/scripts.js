@@ -74,7 +74,7 @@ function createListItem(data) {
 
     // 여행지 상세 보기 이벤트 핸들러
     $tmpl.click(function(e) {
-        var url = 'detail.html?id' + data.id;
+        var url = 'detail.html?id=' + data.id;
         window.location = url;
     });
 
