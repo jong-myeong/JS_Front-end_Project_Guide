@@ -64,13 +64,13 @@ function getDetail(id) {
                 id: id,
                 name: locationDetail.name,
                 cityName: locationDetail.cityName,
-                x: locationDetail.x,
-                y: locationDetail.y
+                x: locationDetail.position.x,
+                y: locationDetail.position.y
             });
 
             Cookies.set('MYTRIPS', myTrips);
 
-            alert('여행지가 등록되었습니다!')
+            alert('여행지가 등록되었습니다!');
         });
     });
 }
